@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+import { Button } from "./components/ui/button";
 
 function App() {
   const [message, setMessage] = useState("");
@@ -16,6 +17,7 @@ function App() {
   return (
     <div className="App">
       <h1 className="font-bold text-red-400">{message}</h1>
+      <Button>Click me</Button>
     </div>
   );
 }
